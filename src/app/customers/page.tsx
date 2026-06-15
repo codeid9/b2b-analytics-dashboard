@@ -66,7 +66,8 @@ export default function CustomersPage() {
         </CardHeader>
         
         <CardContent>
-          <div className="rounded-md border border-border overflow-hidden">
+          <div className="rounded-md border border-border w-full overflow-x-auto no-scrollbar">
+            <div className="min-w-150 inline-block vertical-align-middle w-full">
             <Table>
               <TableHeader className="bg-slate-50">
                 <TableRow>
@@ -100,6 +101,7 @@ export default function CustomersPage() {
                 )}
               </TableBody>
             </Table>
+            </div>
           </div>
         </CardContent>
       </Card>

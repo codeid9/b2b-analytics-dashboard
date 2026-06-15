@@ -17,13 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased`}>
-        <div className="flex min-h-screen">
-          {/* Persistent Sidebar */}
+      <body className={`${inter.className} bg-slate-50 text-slate-900 antialiased max-w-full overflow-x-hidden`}>
+        <div className="flex min-h-screen w-full max-w-full overflow-x-hidden">
           <Sidebar />
-          {/* Main Content Workspace */}
-          <main className="flex-1 md:pl-64 min-h-screen flex flex-col">
-            <div className="p-4 md:p-8 flex-1 pb-20 md:pb-8">
+          <main className="flex-1 md:pl-64 min-h-screen flex flex-col w-full max-w-full overflow-x-hidden">
+            <div className="p-4 md:p-8 flex-1 pb-20 md:pb-8 w-full max-w-full overflow-x-hidden">
               {children}
             </div>
           </main>
